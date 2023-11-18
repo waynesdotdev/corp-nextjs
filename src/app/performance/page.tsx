@@ -1,5 +1,14 @@
-import React from 'react'
+import performanceImg from "public/performance.jpg";
+import Hero from "@/components/Hero";
 
 export default function PerformancePage() {
-  return <div>Performance Page</div>
+  return (
+    <div className="text-white">
+      <Hero
+        imgData={performanceImg}
+        imgAlt="Car Factory"
+        title="Professional Cloud Hosting"
+      />
+    </div>
+  );
 }
