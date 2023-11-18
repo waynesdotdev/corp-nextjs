@@ -1,14 +1,18 @@
-import Link from 'next/link'
+import Image from 'next/image'
+import homeImg from 'public/home.jpg'
 
 export default function Home() {
   return (
-    <div>
-      <div>
-        <Link href='/performance'>Performance</Link>
-        <Link href='/reliability'>Reliability</Link>
-        <Link href='/scale'>Scale</Link>
-      </div>
+    <div className='text-white'>
       <h1>Home Page</h1>
+      <div className='absolute -z-10 inset-0'>
+        <Image
+          src={homeImg}
+          alt='Car factory'
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
     </div>
   )
 }
